@@ -1,0 +1,58 @@
+<html>
+    <title>Signup | shopShoe</title>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <span class="off-name">shopShoe</span> 
+         </div>
+         <div class="nav2">
+            <button class="btn-nav2" ><a href="Login.html">Login</a></button>
+            <button class="btn-nav2"><a href="#nike"></a></button>
+            <button class="btn-nav2"><a href="Signup.html">Signup</a></button>
+            <button class="btn-cart" title="go to cart"><a href="cart.html"><ion-icon name="cart"></ion-icon></a></button>
+            <button class="btn-number"><span><a href="cart.html">0</a></span></button>
+        </div>
+        <div class="tr5"><br><br>
+            <div class="form-signup">
+               <form name="reg" action="Signup.jsp" method="post" onsubmit="return validateForm()">
+                <ul class="list">
+                    <li>
+                        <div class="lp-header">
+                            <ion-icon name="person-add" class="ii"></ion-icon>
+                        </div>
+                    </li>
+                    <li><input type="text" name="fname" id="fname" placeholder="First name *" required></li>
+                    <li><input type="text" name="lname" id="lname" placeholder="Surname *" required></li>
+                    <li><input type="text" name="email" id="email" placeholder="Email *" required></li>
+                    <li><input type="password" name="pwd" id="pwd" placeholder="Password *" required></li>
+                    <li><input type="password" name="cnf" id="cnf" placeholder="Confirm password *" required></li>
+                    <li><font color="black"><input type="submit" value="CREATE ACCOUNT"  onclick="ValidateEmail(document.reg.email)" id="btn-reg"></font></li>
+                </ul>
+               </form>
+            </div>
+        </div>
+        <div class="tr3">
+            
+        </div>
+        <div class="footer">
+    <div class="center-top">
+        <img src="images/logo.png" height="200px" width="200px">
+    </div>
+    <div class="center-bottom">
+       Follow Us On
+       <div class="icon-position">
+           <ion-icon name="logo-facebook"></ion-icon>
+           <ion-icon name="logo-instagram"></ion-icon>
+           <ion-icon name="logo-googleplus"></ion-icon>
+        </div>
+    </div>
+</div>
+       <script src="main.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </body>
+</html>

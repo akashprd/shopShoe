@@ -1,0 +1,61 @@
+<html>
+<title>Cart | shopShoe</title>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+<body>
+    <div class="header">
+        <span class="off-name">shopShoe</span> 
+    </div>
+    <!-- NAVIGATION BUTTON -->
+    
+    <div class="nav">
+        <button class="btn-nav" ><a href="index.html#adidas">Adidas</a></button>
+        <button class="btn-nav"><a href="index.html#nike">Nike</a></button>
+        <button class="btn-nav"><a href="index.html#offwhite">Off-White</a></button>
+        <button class="btn-cart"><a href="index.html"><ion-icon name="home"></ion-icon></a></button>
+        <button class="btn-number"><span><a href="cart.html">0</a></span></button>
+    </div>
+    <div class="product-container">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+        </div>
+        <form>
+        <div class="product-list">
+            
+        </div>
+        <div class="btn-checkout">
+            <button class="btn-check"><a href="checkout.html" class="proceed">Proceed to Checkout</a></button>
+        </div>
+        <div class="clear-cart">
+        <input type="reset" class="btn-clear" value="Clear Cart" onclick="deleteItems()" >
+        </div>
+        </form>
+    </div>
+    <div class="foot-pic">
+       <img src="images/b1.jpg" height="350px" width="45%" alt="bottom-pic-1">
+       <img src="images/b2.jpg" height="350px" width="45%" class="footpic-second" alt="bottom-pic-2">  
+    </div>
+    <div class="footer">
+    <div class="center-top">
+        <img src="images/logo.png" height="200px" width="200px">
+    </div>
+    <div class="center-bottom">
+       Follow Us On
+       <div class="icon-position">
+           <ion-icon name="logo-facebook"></ion-icon>
+           <ion-icon name="logo-instagram"></ion-icon>
+           <ion-icon name="logo-googleplus"></ion-icon>
+        </div>
+    </div>
+</div>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>    
+</head>
+</html>
